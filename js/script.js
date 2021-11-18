@@ -111,7 +111,7 @@ const randomMine = (max) => {
     const minePosition = [];
     let i = 0;
 
-    while (i < 14) {
+    while (i < 16) {
         //generate random number
         const rndNum = Math.floor(Math.random() * max ) + 1;
 
