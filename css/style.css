@@ -1,0 +1,95 @@
+/* ***** commons ***** */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.no-click {
+    pointer-events: none;
+}
+
+.d-none {
+    display: none !important;
+}
+
+/* ***** header ***** */
+
+header {
+    height: 80px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ***** main ****** */
+
+main {
+    background-color: lightblue;
+    height: calc(100vh - 160px);
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main p {
+    color: white;
+    font-size: 30px;
+}
+
+main .container {
+    width: 600px;
+    height: 600px;
+    border: 2px solid white;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box.easy {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.box.medium {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.box.hard {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
+.box.clicked {
+    background-color: lightgreen;
+}
+
+.box.mine {
+    background-color: red;
+}
+
+#game-result {
+    position: absolute;
+    bottom: 10px;
+}
+
+/* ***** footer ***** */
+
+footer {
+    height: 80px;
+    line-height: 80px;
+    padding-left: 100px;
+}
